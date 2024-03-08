@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<HEAD>
+<LINK href="../static/style.css" rel="stylesheet" type="text/css">
+</HEAD>
+<body>
+<div class = "box">
+    <h3 id="font1" align="center"> Event Search </h3>
+    <hr style="margin-left: 50px; margin-right: 50px; color: white;">
+    <div class="info">
+            <form id="searchForm" onsubmit="return false">
+                <table style="position: relative; left: 50px;">
+                    <tr>
+                        <td id="infofont"> Keyword<span style="color: red;">*</span></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <input  style="width:700px; height:30px;"  type="text" id="keyword" name="keyword" autocomplete="off" required >
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td id="infofont">Distance(miles)</td>
+                        <td id="infofont">Category<span style="color: red;">*</span></td>
+                    </tr>
+                    <tr>
+                        <td>
+                        <input style="width:200px; height:30px; color:lightgrey" type="number" id="distance" name="distance" autocomplete="off" placeholder="10" min="0">
+                        </td>
+                        <td>
+                            <select style="width:380px; height:30px; position:relative" id="category" name="category" required>
+                                <option value="Default">Default</option>
+                                <option value="Music">Music</option>
+                                <option value="Sports">Sports</option>
+                                <option value="Arts">Arts & Theatre</option>
+                                <option value="Film">Film</option>
+                                <option value="Miscellaneous">Miscellaneous</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id = "infofont">
+                            Location<span style="color: red;">*</span>
+                            <label style="font-weight: 100; color: lightgrey; border-radius: 0px 0px;"><input type="checkbox" id = "location" name="location" value="aotulocation" onclick="locklocationinput()">
+                                Auto-Detect Location</label>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <input style="width:700px; height:30px;" type="text" id="inputlocation" autocomplete="off" name="location" required >
+                        </td>
+                    </tr>
+
+                    <tr id="space"><td></td></tr>
+                    <tr><td></td></tr>
+                    <tr><td></td></tr>
+
+                    <tr>
+                        <td>
+                            <button style="background-color: darkorange; box-shadow:0 5px 0 orangered;" onmouseover="this.style.backgroundColor='orange'" onmouseout="this.style.backgroundColor='darkorange'" onclick="search()">Search</button>
+                            <button style="background-color: cornflowerblue; box-shadow:0 5px 0 royalblue;" onmouseover="this.style.backgroundColor='lightskyblue'" onmouseout="this.style.backgroundColor='cornflowerblue'" onclick="clearall(); return false">Clear</button>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+    </div>
+</div>
+
+<div class = "SearchResult">
+    <div id="NoRecordsFound"></div>
+    <div id="Result"></div>
+    <div id = "eventdetail">
+
+    </div>
+    <div id = "arrdown"></div>
+    <div id = "novenue"></div>
+    <div id = "venuedetail">
+    </div>
+
+
+
+
+</div>
+
+</body>
+</html>
+<script src="../static/Search.js"></script>

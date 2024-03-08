@@ -1,0 +1,269 @@
+body{
+    background-size: cover;
+    background-attachment: fixed;
+    background-image: url("../static/background.jpg");
+}
+
+.box{
+    width:800PX;
+    height:450px;
+    border-radius: 25px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(128, 128, 128, 0.4);
+    -webkit-backdrop-filter: blur(15px);
+    backdrop-filter: blur(15px);
+}
+.box h3{
+    margin: 0;
+    /*padding: 0;*/
+    /*display: inline-block;*/
+}
+.info{
+    width:800PX;
+    height:400px;
+    margin-top: 10px;
+    margin-left: 0;
+    margin-right: auto;
+    /*text-decoration-color: lightskyblue;*/
+    position: absolute;
+    /*text-align: center;*/
+}
+.info input{
+    margin-left: 20px;
+    margin-right: 20px;
+    color: white;
+}
+#searchForm{
+    width:800PX;
+    height:500px;
+    line-height: 40px;
+}
+#searchForm input{
+    margin: 0;
+    /*margin-left: 20px;*/
+    /*margin-right: 20px;*/
+    /*width: 660px;*/
+    /*height: 10px;*/
+    border: 1px solid white;
+    border-radius: 5px;
+    background-color: rgba(32, 74, 102, 0);
+}
+#searchForm select{
+    color: white;
+    background-color: rgba(32, 74, 102, 0);
+    border-radius: 5px;
+    border: 1px solid white;
+}
+#searchForm button{
+    width: 115px;
+    height: 50px;
+    border-radius: 8px;
+    border: 0 solid lightgrey;
+    /*box-shadow: 2px 4px 1px 1px;*/
+}
+
+.norecords{
+    width:1200PX;
+    height:50px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    /*border: 2px solid black;*/
+    background-color: rgb(228, 225, 225);
+    text-align: center;
+    color: red;
+    font-family: "Arial", Arial, sans-serif;";
+}
+.tabular{
+    background-color: white;
+    width: auto;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+.tabular th{
+    border: 1px solid black;
+    text-align: center;
+    padding: 5px 20px 5px 20px;
+    height: 50px;
+    cursor: pointer;
+}
+.tabular td{
+    border: 1px solid black;
+    text-align: center;
+    padding: 5px 20px 5px 20px;
+    height: 100px;
+}
+.tabular a:link{
+    color: black;
+    text-decoration:none;
+}
+.tabular a:visited{
+    color: black;
+    text-decoration:none;
+}
+.tabular a:hover{
+    color: blueviolet;
+    text-decoration:none;
+}
+
+.detailbox{
+    width: auto;
+    height:auto;
+    border-radius: 25px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(128, 128, 128, 0.4);
+    -webkit-backdrop-filter: blur(15px);
+    backdrop-filter: blur(15px);
+    display:table;
+    /*border: 2px solid white;*/
+}
+.detailbox h2{
+    font-family:"Arial", Arial, sans-serif;
+    color: rgb(154 252 228);
+    font-weight: normal;
+    font-size:20px;
+    line-height: 10px;
+}
+.detailbox p{
+    color:white;
+    line-height: 20px;
+    word-wrap: break-word;
+	word-break: break-all;
+}
+
+.detailbox a:link{
+    color: deepskyblue;
+    text-decoration:none;
+}
+.detailbox a:visited{
+    color: deepskyblue;
+    text-decoration:none;
+}
+.detailbox a:hover{
+    color: blueviolet;
+    text-decoration:none;
+}
+.arrow-down {
+    width: 20px;
+    height: 20px;
+    border: 2px solid lightgrey;
+    border-top: 0;
+    border-right: 0;
+    transform: rotate(-45deg);
+    margin-left:80px;
+}
+.arrow-down:hover{
+    width: 20px;
+    height: 20px;
+    border: 3px solid white;
+    border-top: 0;
+    border-right: 0;
+    transform: rotate(-45deg);
+    margin-left:80px;
+}
+
+.Venue-Deatils-arrow{
+    /*align: center;*/
+    width: 180px;
+    height: 100px;
+    margin-left:auto;
+    margin-right:auto;
+    /*border: 2px solid white;*/
+    /*display: table-cell;*/
+    /*!*垂直居中 *!*/
+    /*vertical-align: middle;*/
+    /*!*水平居中*!*/
+    /*text-align: center;*/
+}
+
+.Venue-Deatils-arrow h2{
+    font-family: "Arial", Arial, sans-serif;
+    color: lightgrey;
+    font-weight: lighter;
+    font-size:20px;
+}
+
+.Venue-Details{
+    width:800PX;
+    height:auto;
+    border-radius: 25px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    /*-webkit-backdrop-filter: blur(15px);*/
+    /*backdrop-filter: blur(15px);*/
+    /*display:table;*/
+}
+.Venueinsidebox{
+    width:760PX;
+    height: auto;
+    border-radius: 25px;
+    position: relative;
+    /*margin-top: 50px;*/
+    /*margin-left: auto;*/
+    /*margin-right: auto;*/
+    margin:auto;
+    padding: 3px 3px 3px 3px;
+    border: 2px solid black;
+}
+.Venue-Details h2{
+    text-align: center;
+    font-family:"Arial", Arial, sans-serif;
+    color: black;
+    font-weight: normal;
+    font-size:30px;
+    text-decoration: underline;
+}
+.Venue-Details p{
+    font-family:"Arial", Arial, sans-serif;
+    color: black;
+    font-weight: lighter;
+    font-size:20px;
+    line-height:5px;
+}
+.Venue-Details a:link{
+    line-height: 50px;
+    color: lightskyblue;
+    text-decoration:none;
+}
+.Venue-Details a:visited{
+    line-height: 50px;
+    color: lightskyblue;
+    text-decoration:none;
+}
+.Venue-Details a:hover{
+    line-height: 50px;
+    color: blueviolet;
+    text-decoration:none;
+}
+
+#font1{
+    font-family:"Times New Roman", Times, serif;
+    font-weight: lighter;
+    font-size: 50px;
+    font-style: normal;
+    color: white;
+}
+#infofont{
+    font-family:"Arial", Arial, sans-serif;
+    color: lightskyblue;
+}
+#detailtitle{
+    font-family:"Arial", Arial, sans-serif;
+    color: white;
+    font-size: 35px;
+    font-weight: lighter;
+    padding: 10px 50px 10px 50px;
+}
+#detailfont{
+    font-family:"Arial", Arial, sans-serif;
+    color: darkseagreen;
+}
